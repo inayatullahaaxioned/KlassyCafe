@@ -164,7 +164,87 @@ li {
 /*=================================
   main styling starts here
 =================================*/
+/* banner section styling start here  */
+.banner .wrapper {
+  width: 100%;
+  display: flex;
+}
 
+.left-banner {
+  max-width: 405px;
+  flex-basis: 92%;
+  position: relative;
+  background: url(/assets/images/top-left-bg.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.banner-content {
+  padding: 275px 27px;
+}
+
+.reservation-btn {
+  padding: 13px 17px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #FD5646;
+}
+
+.banner-list,
+.banner-item,
+.banner-item img {
+  height: 100%;
+}
+
+.banner-item img {
+  max-width: 947px;
+}
+
+.banner-item:not(:first-child) {
+  display: none;
+}
+
+.right-banner { position: relative; }
+
+.prev-banner {
+  display: inline-block;
+  position: absolute;
+  text-indent: -9999px;
+  top: 50%;
+  left: 3%;
+  background-color: #FD5646;
+  border-radius: 50%;
+  opacity: .6;
+  cursor: pointer;
+}
+
+.banner-heading {
+  color: #fff;
+  font-size: 51px;
+  font-style: italic;
+}
+
+.banner-para {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.prev-banner::before {
+  content: "\f104";
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "FontAwesome";
+  float: left;
+  text-indent: 0;
+  font-size: 25px;
+}
+/* banner section styling start end  */
 
 
 
