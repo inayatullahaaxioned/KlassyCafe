@@ -729,20 +729,44 @@ li {
   color: #fff;
 }
 
-
-
-
-
-
-
  /*=================================
   footer styling ends here
 =================================*/ 
 
 /*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
+/*media query hover effect for desktop starts here*/
+@media only screen and (min-width: 995px) {
+  .nav-item:hover {
+    color: #fd5646;
+  }
 
+  .reservation-btn:hover {
+    border: 2px solid #fff;
+    background-color: #fd5646;
+    color: #fff;
+    transition: all .3s;
+  }
 
+  .table-reservation form button:hover {
+    border: 2px solid #fd5646;
+    background-color: #fff;
+    color: #fd5646;
+    transition: all .4s;
+  }
 
-}  
+  .phone-email a:hover {
+    color: #FD5646;
+    transition: all .3s;
+  }
+
+  .social-icon:hover::before {
+    font-size: 23px;
+    transition: all .3s;
+  }
+
+  .design-anc:hover {
+    color: #454545;
+    transition: all .3s;
+  }
+} 
+/*media query hover effect for desktop ends here*/
