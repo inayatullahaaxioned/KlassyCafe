@@ -355,7 +355,7 @@ li {
   color: #fff;
 }
 
-.menu-item:hover .item-content {
+.item-content:hover {
   bottom: 0;
   transition: all .5s;
 }
@@ -456,7 +456,7 @@ li {
 .reservation { position: relative; }
 
 .contact-bg {
-  height: 780px;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -582,6 +582,11 @@ li {
   padding: 20px 15px;
 }
 
+.form-input textarea {
+  border: 1px solid #e1e1e1;
+  outline: none;
+}
+
 .form-input input,
 .form-input textarea:focus { outline: none; }
 
@@ -630,7 +635,7 @@ li {
 }
 
 .item-price {
-  width: 18%;
+  min-width: 70px;
   height: 70px;
   border-radius: 8px;
   display: flex;
@@ -770,3 +775,12 @@ li {
   }
 } 
 /*media query hover effect for desktop ends here*/
+/* media query for 1024px starts here  */
+@media only screen and (max-width: 1024px) {
+  .reservation .wrapper {
+    flex-direction: column;
+  }
+
+  .tab-item { flex-basis: 46.3%;}
+}
+/* media query for 1024px ends here  */
