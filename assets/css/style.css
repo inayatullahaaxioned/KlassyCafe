@@ -660,12 +660,6 @@ li {
 .tab-item img { width: auto; }
 /* weeekly special section styling end here  */
 
-
-
-
-
-
-
 /*=================================
   main styling ends here
 =================================*/
@@ -673,6 +667,67 @@ li {
 /*=================================
   footer styling starts here
 =================================*/ 
+.footer {
+  background-color: #FB5849;
+}
+
+.footer .wrapper {
+  padding: 45px 0 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.social,
+.copyright {
+  padding-top: 10px;
+}
+
+.footer-logo { padding-top: 10px; }
+
+.social-icon {
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+.social-icon::before {
+  content: "\f09a";
+  width: 46px;
+  height: 46px;
+  font-family: "FontAwesome";
+  float: left;
+  text-indent: 0;
+  font-size: 20px;
+  background-color: #fff;
+  color: #FB5849;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.twitter::before { content: "\f099";}
+.linkedin::before { content: "\f0e1";}
+.instagram::before { content: "\f16d";}
+
+.copyright p,
+.copyright span,
+.design-anc {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+}
+
+.design-anc {
+  color: #fff;
+}
 
 
 
