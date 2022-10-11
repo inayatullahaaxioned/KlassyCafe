@@ -593,6 +593,73 @@ li {
 }
 /* reservation section styling ends here  */
 
+/* weeekly special section styling starts here  */
+.tab-list {
+  display: flex;
+  justify-content: center;
+}
+
+.tab-list figure { text-align: center; }
+
+.tab-logo {
+  max-width: 90px;
+}
+
+.tab-list span {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+.tab-list span.active { color: #FB5849; }
+
+.tab-item-list {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.tab-item {
+  display: flex;
+  align-items: center;
+  flex-basis: 47.3%;
+}
+
+.tab-item figure {
+  max-width: 96px ;
+}
+
+.item-price {
+  width: 18%;
+  height: 70px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FD5646;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  flex-basis: 20%;
+}
+
+.tab-content {
+  padding-left: 7.6%;
+  padding-right: 7%;
+}
+
+.tab-content .item-name {
+  font-size: 20px;
+}
+
+.tab-content p {
+  font-size: 13.5px;
+  line-height: 22px;
+}
+
+.tab-item img { width: auto; }
+/* weeekly special section styling end here  */
+
 
 
 
