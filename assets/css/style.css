@@ -183,11 +183,13 @@ li {
 }
 
 .reservation-btn {
-  padding: 13px 17px;
+  padding: 12px 26px;
   border: 2px solid #fff;
   border-radius: 4px;
   background-color: #fff;
   color: #FD5646;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .banner-list,
@@ -225,6 +227,7 @@ li {
 }
 
 .banner-para {
+  margin-bottom: 20px;
   color: #fff;
   font-size: 18px;
   font-weight: 600;
