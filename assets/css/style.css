@@ -100,6 +100,7 @@ li {
 
 /*for wrapper*/
 .wrapper {
+  padding: 120px 0;
   max-width: 1360px;
   width: 81.75%;
   margin: 0 auto;
@@ -256,7 +257,8 @@ li {
   display: flex;
 }
 
-.heading {
+.heading,
+.middle-heading {
   padding-bottom: 23px;
   color: #FD5646;
   font-size: 15px;
@@ -274,11 +276,12 @@ li {
   vertical-align: middle;
 }
 
-.main-heading {
+.main-heading,
+.middle-main-heading {
   padding-right: 24%;
   padding-bottom: 32px;
   font-size: 30px;
-  font-weight: 800;
+  font-weight: 900;
   letter-spacing: 1px;
 }
 
@@ -407,6 +410,46 @@ li {
 
 .right-arrow::before { content: "\f105";}
 /* menu section styling start end  */
+
+/* chef section styling start here  */
+.middle-heading,
+.middle-main-heading {
+  text-align: center;
+}
+
+.middle-main-heading {
+  padding:0 0 80px;
+  margin: 0 auto;
+  width: 40%;
+}
+.chef-list {
+  display: flex;
+  gap: 30px;
+}
+
+.chef-item {
+  border: 1px solid #c5c5c5;
+  border-radius: 5px;
+  flex-basis: 32%;
+  text-align: center;
+}
+
+.chef-img { padding: 5px; }
+
+.chef-name {
+  padding: 20px 0 16px 0;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.designation {
+  display: inline-block;
+  margin-bottom: 30px;
+  font-size: 14px;
+  letter-spacing: .5px;
+}
+/* chef section styling end here  */
 
 
 
