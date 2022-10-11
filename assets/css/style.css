@@ -168,6 +168,7 @@ li {
 =================================*/
 /* banner section styling start here  */
 .banner .wrapper {
+  padding: 0;
   width: 100%;
   display: flex;
 }
@@ -450,6 +451,147 @@ li {
   letter-spacing: .5px;
 }
 /* chef section styling end here  */
+
+/* reservation section styling starts here  */
+.reservation { position: relative; }
+
+.contact-bg {
+  height: 780px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.contact-bg img { height: 100%; }
+
+.reservation .wrapper {
+  display: flex;
+}
+
+.left-reservation {
+  padding: 70px 0;
+  flex-basis: 48.5%;
+ }
+
+.table-reservation { flex-basis: 47%; }
+
+.reservation .heading,
+.reservation .main-heading,
+.reserve-para {
+  color: #fff;
+}
+
+.left-reservation .main-heading {
+  padding: 0;
+  margin-bottom: 32px;
+}
+
+.reserve-para {
+  margin-bottom: 64px;
+  line-height: 21px;
+  font-size: 15px;
+}
+
+.phone-email {
+  display: flex;
+  justify-content: space-between;
+}
+
+.phone,
+.emails {
+  padding: 60px 7.7% 25px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
+.emails { padding: 60px 11.5% 25px; }
+
+.phone-email a {
+  display: block;
+  color: #454545;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.contact-heading {
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+
+.phone::before,
+.emails::before {
+  content: "\f095";
+  width: 70px;
+  height: 70px;
+  background-color: #FB5849;
+  color: #fff;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  font-family: "FontAwesome";
+  position: absolute;
+  top: -16%;
+  left: 36%;
+}
+
+.emails::before { content: "\f0e0"; }
+
+.table-reservation {
+  background-color: #fff;
+  border-radius: 5px;
+  margin-left: 6%;
+  padding: 45px 0;
+}
+
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.table-reservation form { 
+  width: 88%;
+  margin: 0 auto;
+}
+
+.table-heading {
+  font-size: 28px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.form-input input{
+  padding: 16px 19px;
+  border: 1px solid #e1e1e1;
+  border-radius: 3px;
+}
+
+.form-input textarea {
+  resize: none;
+  width: 100%;
+  padding: 20px 15px;
+}
+
+.form-input input,
+.form-input textarea:focus { outline: none; }
+
+.table-reservation form .reservation-btn {
+  width: 100%;
+  background-color: #fd5646;
+  color: #fff;
+  font-size: 14px;
+}
+/* reservation section styling ends here  */
 
 
 
