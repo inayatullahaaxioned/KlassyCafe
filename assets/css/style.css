@@ -85,6 +85,7 @@ sub { bottom: -.25em; }
 body {
   box-sizing: border-box;
   font-family: sans-serif;
+  overflow: hidden;
 }
 
 a { 
@@ -277,7 +278,7 @@ li {
   padding-right: 24%;
   padding-bottom: 32px;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 800;
   letter-spacing: 1px;
 }
 
@@ -300,6 +301,112 @@ li {
 
 .about-content { flex-basis: 54%; }
 /* about section styling end here  */
+
+/* menu section styling start here  */
+.wrapper-large {
+  width: 100%;
+}
+
+.menu .main-heading { width: 36%; }
+
+.menu-list {
+  display: flex;
+  gap: 30px;
+}
+
+.menu-item {
+  margin-bottom: 44px;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.price {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FD5646;
+  border-radius: 8px;
+  border-start-start-radius: 0;
+  color: #fff;
+  font-size: 22px;
+}
+
+.menu-item figure {
+  max-width: 264px;
+}
+
+.item-content {
+  padding: 15px 20px;
+  position: absolute;
+  bottom: -27%;
+  left: 0;
+  background-color: #FD5646;
+  color: #fff;
+}
+
+.menu-item:hover .item-content {
+  bottom: 0;
+  transition: all .5s;
+}
+
+.item-name,
+.hidden-content p {
+  padding-bottom: 15px;
+}
+
+.item-name {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.hidden-content p {
+  font-size: 14px;
+}
+
+.make-reserve-btn {
+  color: #fff;
+  font-size: 14px;
+}
+
+.make-reserve-btn::before {
+  content: "\f107";
+  padding-left: 6px;
+  font-family: "FontAwesome";
+  float: right;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.control-slide {
+  display: block;
+  text-indent: -9999px;
+  display: flex;
+  justify-content: center;
+}
+
+.left-arrow::before,
+.right-arrow::before {
+  padding: 13px;
+  content: "\f104";
+  font-family: "FontAwesome";
+  float: left;
+  text-indent: 0;
+  font-size: 25px;
+  color: #FD5646;
+  text-align: center;
+  cursor: pointer;
+}
+
+.right-arrow::before { content: "\f105";}
+/* menu section styling start end  */
 
 
 
