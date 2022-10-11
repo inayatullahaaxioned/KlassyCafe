@@ -247,7 +247,59 @@ li {
   text-indent: 0;
   font-size: 25px;
 }
-/* banner section styling start end  */
+/* banner section styling  end  */
+
+/* about section styling start here  */
+.about .wrapper {
+  padding: 120px 0;
+  display: flex;
+}
+
+.heading {
+  padding-bottom: 23px;
+  color: #FD5646;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.heading::before {
+  content: "";
+  width: 30px;
+  height: 1px;
+  margin-right: 10px;
+  background-color: #FD5646;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.main-heading {
+  padding-right: 24%;
+  padding-bottom: 32px;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.about-para {
+  padding:0 46px 26px 0;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.about-anc { color: #7095ED; }
+
+.about-image {
+  display: flex;
+  gap: 30px;
+}
+
+.about-img-list img{
+  max-width: 160px;
+}
+
+.about-content { flex-basis: 54%; }
+/* about section styling end here  */
 
 
 
