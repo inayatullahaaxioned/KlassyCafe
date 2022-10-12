@@ -16,7 +16,9 @@
     <header class="header">
       <div class="wrapper">
         <figure class="logo">
-          <img src="/assets/images/klassy-logo.png" alt="Klassy logo">
+          <a href="#FIXME">
+            <img src="/assets/images/klassy-logo.png" alt="Klassy logo">
+          </a>
         </figure>
         <div class="hamburger">
           <span class="bar bar-one">bar</span>
@@ -72,7 +74,10 @@
             </div>
           </div>
           <div class="right-banner">
-            <span class="prev-banner">Previous Banner</span>
+            <div class="control-slide">
+              <a class="prev-banner banner-arrow" title="Previous Banner">Previous Banner</a>
+              <a class="next-banner banner-arrow" title="Next Banner">Next Banner</a>
+            </div>
             <ul class="banner-list">
               <li class="banner-item">
                 <img src="/assets/images/slide-01.jpg" alt="Slide one">
@@ -90,11 +95,11 @@
       <!-- banner section end  -->
 
       <!-- about section start  -->
-      <seciton class="about">
+      <section class="about">
         <div class="wrapper">
           <div class="about-content">
-            <h3 class="heading">About Us</h3>
-            <h2 class="main-heading">We Leave A Delicious Memory For You</h2>
+            <h2 class="heading">About Us</h2>
+            <h3 class="main-heading">We Leave A Delicious Memory For You</h3>
             <p class="about-para">Klassy Cafe is one of the best <a href="#FIXME" class="about-anc" title="restaurant HTML templates">restaurant HTML templates</a> with Bootstrap
             v4.5.2 CSS framework. You can download and feel free to use this website
             template layout for your restaurant business. You are allowed to use this
@@ -117,16 +122,14 @@
             <img src="/assets/images/about-video-bg.jpg" alt="About Video image">
           </figure>
         </div>
-      </seciton>
+      </section>
       <!-- about section end  -->
 
       <!-- menu section start  -->
       <section class="menu">
-        <div class="wrapper-large">
-          <div class="wrapper">
-            <h3 class="heading">Our Menu</h3>
-            <h2 class="main-heading">Our selection of cakes with quality taste</h2>
-          </div>
+        <div class="wrapper">
+            <h2 class="heading">Our Menu</h2>
+            <h3 class="main-heading">Our selection of cakes with quality ta3te</h2>
           <ul class="menu-list">
             <li class="menu-item">
               <figure class="menu-img">
@@ -195,8 +198,8 @@
             </li>
           </ul>
           <div class="control-slide">
-            <span class="left-arrow">Left Arrow</span>
-            <span class="right-arrow">Right Arrow</span>
+            <a class="left-arrow" title="Left Item">Left Arrow</a>
+            <a class="right-arrow" title="Right Item">Right Arrow</a>
           </div>
         </div>
       </section>
@@ -205,8 +208,8 @@
       <!-- chef section start  -->
       <section class="chef">
         <div class="wrapper">
-          <h3 class="middle-heading">Our Chefs</h3>
-          <h2 class="middle-main-heading">We offer the best ingredients for you</h2>
+          <h2 class="middle-heading">Our Chefs</h2>
+          <h3 class="middle-main-heading">We offer the best ingredients for you</h3>
           <ul class="chef-list">
             <li class="chef-item">
               <figure class="chef-img">
@@ -241,8 +244,8 @@
         </figure>
         <div class="wrapper">
           <div class="left-reservation">
-            <h3 class="heading">Contact Us</h3>
-            <h2 class="main-heading">Here You Can Make A Reservation Or Just walkin to our cafe</h2>
+            <h2 class="heading">Contact Us<2h3>
+            <h3 class="main-heading">Here You Can Make A Reservation Or Jus3 walkin to our cafe</h2>
             <p class="reserve-para">Donec pretium est orci, non vulputate arcu hendrerit a. Fusce a eleifend
             riqsie, namei sollicitudin urna diam, sed commodo purus porta ut.</p>
             <div class="phone-email">
@@ -260,35 +263,23 @@
           </div>
           <div class="table-reservation">
             <h3 class="table-heading">Table Reservation</h3>
-            <form action="#FIXME">
+            <form action="#FIXME" method="get">
               <div class="form-row">
-                <div class="form-input">
                   <input type="text" name="name" placeholder="Your Name">
-                </div>
-                <div class="form-input">
                   <input type="email" name="email" placeholder="Your Email Address">
-                </div>
               </div>
               <div class="form-row">
-                <div class="form-input">
                   <input type="number" name="phone" placeholder="Phone Number">
-                </div>
-                <div class="form-input">
                   <input type="number" name="guest" placeholder="No Of Guests">
-                </div>
               </div>
               <div class="form-row">
-                <div class="form-input">
                   <input type="text" name="date" placeholder="dd/mm/yy">
-                </div>
-                <div class="form-input">
                   <input type="text" name="time" placeholder="Time">
-                </div>
               </div>
               <div class="form-row form-input">
                 <textarea name="message" placeholder="Message" rows="10"></textarea>
               </div>
-              <button class="reservation-btn">Make A Reservation</button>
+              <button class="reservation-btn" type="submit">Make A Reservation</button>
             </form>
           </div>
         </div>
@@ -298,85 +289,115 @@
       <!-- week special section start  -->
       <section class="special">
         <div class="wrapper">
-          <h3 class="middle-heading">Klassy Week</h3>
-          <h2 class="middle-main-heading">This Week's Special Meal Offers</h2>
-          <ul class="tab-list">
-            <li>
-              <figure>
-                <img class="tab-logo active" src="/assets/images/tab-icon-01.png" alt="Breakfast icon">
-                <span class="active">Breakfast</span>
-              </figure>
+          <h2 class="middle-heading">Klassy Week<2h3>
+          <h3 class="middle-main-heading">This Week's Special Meal Offers</h2>
+   3      <ul class="tab-list">
+            <li class="active">
+              <a href="#FIXME" class="tab" title="Breakfast">
+                <figure>
+                  <img class="tab-logo" src="/assets/images/tab-icon-01.png" alt="Breakfast icon">
+                  <figcaption>Breakfast</figcaption>
+                </figure>
+              </a>
             </li>
             <li>
-              <figure>
-                <img class="tab-logo" src="/assets/images/tab-icon-02.png" alt="Lunch icon">
-                <span>Lunch</span>
-              </figure>
+              <a href="#FIXME" class="tab" title="Lunch">
+                <figure>
+                  <img class="tab-logo" src="/assets/images/tab-icon-02.png" alt="Lunch icon">
+                  <figcaption>Lunch</figcaption>
+                </figure>
+              </a>
             </li>
             <li>
-              <figure>
-                <img class="tab-logo" src="/assets/images/tab-icon-03.png" alt="Dinner icon">
-                <span>Dinner</span>
-              </figure>
+              <a href="#FIXME" class="tab" title="Dinner">
+                <figure>
+                  <img class="tab-logo" src="/assets/images/tab-icon-03.png" alt="Dinner icon">
+                  <figcaption>Dinner</figcaption>
+                </figure>
+              </a>
             </li>
           </ul>
           <ul class="tab-item-list">
             <li class="tab-item">
-              <figure>
+              <a href="#FIXME" title="Fresh Chicken Salad">
+                <figure>
                 <img src="/assets/images/tab-item-01.png" alt="Breakfast image">
               </figure>
+              </a>
               <div class="tab-content">
-                <h4 class="item-name">Fresh Chicken Salad</h4>
+                <a href="#FIXME">
+                  <h4 class="item-name">Fresh Chicken Salad</h4>
+                </a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, iure at!</p>
               </div>
               <span class="item-price">$10.50</span>
             </li>
             <li class="tab-item">
-              <figure>
+              <a href="#FIXME" title="Eggs Omelette">
+                <figure>
                 <img src="/assets/images/tab-item-04.png" alt="Breakfast image">
               </figure>
+              </a>
               <div class="tab-content">
-                <h4 class="item-name">Eggs Omelette</h4>
+                <a href="#FIXME">
+                  <h4 class="item-name">Eggs Omelette</h4>
+                </a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, iure at!</p>
               </div>
               <span class="item-price">$6.50</span>
             </li>
             <li class="tab-item">
-              <figure>
+              <a href="#FIXME" title="Orange Juice">
+                <figure>
                 <img src="/assets/images/tab-item-02.png" alt="Breakfast image">
               </figure>
+              </a>
               <div class="tab-content">
-                <h4 class="item-name">Orange Juice</h4>
+                <a href="#FIXME">
+                  <h4 class="item-name">Orange Juice</h4>
+                </a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, iure at!</p>
               </div>
               <span class="item-price">$8.50</span>
             </li>
             <li class="tab-item">
-              <figure>
+              <a href="#FIXME" title="Dollma Pire">
+                <figure>
                 <img src="/assets/images/tab-item-05.png" alt="Breakfast image">
               </figure>
+              </a>
               <div class="tab-content">
-                <h4 class="item-name">Dollma Pire</h4>
+                <a href="#FIXME">
+                  <h4 class="item-name">Dollma Pire</h4>
+                </a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, iure at!</p>
               </div>
               <span class="item-price">$5.00</span>
             </li>
             <li class="tab-item">
-              <figure>
+              <a href="#FIXME" title="Fruit Salad">
+                <figure>
                 <img src="/assets/images/tab-item-03.png" alt="Breakfast image">
               </figure>
+              </a>
               <div class="tab-content">
-                <h4 class="item-name">Fruit Salad</h4>
+                <a href="#FIXME">
+                  <h4 class="item-name">Fruit Salad</h4>
+                </a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, iure at!</p>
               </div>
               <span class="item-price">$9.90</span>
             </li>
             <li class="tab-item">
-              <figure>
+              <a href="#FIXME" title="Omelette & Cheese">
+                <figure>
                 <img src="/assets/images/tab-item-06.png" alt="Breakfast image">
               </figure>
+              </a>
               <div class="tab-content">
-                <h4 class="item-name">Omelette & Cheese</h4>
+                <a href="#FIXME">
+                  <h4 class="item-name">Omelette & Cheese</h4>
+                </a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, iure at!</p>
               </div>
               <span class="item-price">$4.10</span>
@@ -412,8 +433,8 @@
         </figure>
         <div class="copyright">
           <p>&copy; Copyright Klassy Cafe Co.</p>
-          <span>Design:
-            <a href="#FIXME" class="design-anc" title="TemplateMo"> TemplateMo</a>
+          <p>Design:
+            <a href="#FIXME" class="design-anc" title="TemplateMo"> TemplateMo</p>
           </span>
         </div>
       </div>
