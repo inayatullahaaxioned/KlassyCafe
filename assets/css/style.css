@@ -105,6 +105,14 @@ li {
   width: 81.75%;
   margin: 0 auto;
 }
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 /*=================================
   Header styling starts here
 =================================*/
@@ -115,9 +123,7 @@ li {
   align-items: center;
 }
 
-.logo {
-  max-width: 168px;
-}
+.logo { max-width: 168px; }
 
 .bar {
   width: 25px;
@@ -201,14 +207,9 @@ li {
   height: 100%;
 }
 
-.banner-item img {
-  max-width: 947px;
-}
+.banner-item img { max-width: 947px; }
 
-.banner-item:not(:first-child) {
-  display: none;
-}
-
+.banner-item:not(:first-child) { display: none; }
 .right-banner { position: relative; }
 
 .prev-banner {
@@ -279,7 +280,6 @@ li {
 
 .main-heading,
 .middle-main-heading {
-  padding-right: 24%;
   padding-bottom: 32px;
   font-size: 30px;
   font-weight: 900;
@@ -299,18 +299,14 @@ li {
   gap: 30px;
 }
 
-.about-img-list img{
-  max-width: 160px;
-}
-
+.about-img-list img{ max-width: 160px; }
 .about-content { flex-basis: 54%; }
 /* about section styling end here  */
 
 /* menu section styling start here  */
-.wrapper-large {
-  width: 100%;
-}
+.menu { background-color: #FEFAF9; }
 
+.wrapper-large { width: 100%; }
 .menu .main-heading { width: 36%; }
 
 .menu-list {
@@ -342,9 +338,7 @@ li {
   font-size: 22px;
 }
 
-.menu-item figure {
-  max-width: 264px;
-}
+.menu-item figure { max-width: 264px; }
 
 .item-content {
   padding: 15px 20px;
@@ -370,9 +364,7 @@ li {
   font-weight: 700;
 }
 
-.hidden-content p {
-  font-size: 14px;
-}
+.hidden-content p { font-size: 14px; }
 
 .make-reserve-btn {
   color: #fff;
@@ -445,8 +437,8 @@ li {
 }
 
 .designation {
-  display: inline-block;
   margin-bottom: 30px;
+  display: inline-block;
   font-size: 14px;
   letter-spacing: .5px;
 }
@@ -465,10 +457,7 @@ li {
 }
 
 .contact-bg img { height: 100%; }
-
-.reservation .wrapper {
-  display: flex;
-}
+.reservation .wrapper { display: flex; }
 
 .left-reservation {
   padding: 70px 0;
@@ -502,11 +491,11 @@ li {
 .phone,
 .emails {
   padding: 60px 7.7% 25px;
-  background-color: #fff;
   border-radius: 5px;
+  background-color: #fff;
   display: inline-block;
-  text-align: center;
   position: relative;
+  text-align: center;
 }
 
 .emails { padding: 60px 11.5% 25px; }
@@ -546,10 +535,10 @@ li {
 .emails::before { content: "\f0e0"; }
 
 .table-reservation {
-  background-color: #fff;
-  border-radius: 5px;
-  margin-left: 6%;
   padding: 45px 0;
+  margin-left: 6%;
+  border-radius: 5px;
+  background-color: #fff;
 }
 
 
@@ -588,7 +577,9 @@ li {
 }
 
 .form-input input,
-.form-input textarea:focus { outline: none; }
+.form-input textarea:focus {
+  outline: none;
+}
 
 .table-reservation form .reservation-btn {
   width: 100%;
@@ -605,16 +596,14 @@ li {
 }
 
 .tab-list figure { text-align: center; }
-
-.tab-logo {
-  max-width: 90px;
-}
+.tab-logo { max-width: 90px; }
 
 .tab-list span {
   text-align: center;
   font-size: 14px;
   font-weight: 600;
 }
+
 .tab-list span.active { color: #FB5849; }
 
 .tab-item-list {
@@ -630,9 +619,7 @@ li {
   flex-basis: 47.3%;
 }
 
-.tab-item figure {
-  max-width: 96px ;
-}
+.tab-item figure { max-width: 96px ; }
 
 .item-price {
   min-width: 70px;
@@ -653,9 +640,7 @@ li {
   padding-right: 7%;
 }
 
-.tab-content .item-name {
-  font-size: 20px;
-}
+.tab-content .item-name { font-size: 20px; }
 
 .tab-content p {
   font-size: 13.5px;
@@ -672,9 +657,7 @@ li {
 /*=================================
   footer styling starts here
 =================================*/ 
-.footer {
-  background-color: #FB5849;
-}
+.footer { background-color: #FB5849; }
 
 .footer .wrapper {
   padding: 45px 0 35px;
@@ -730,10 +713,7 @@ li {
   font-weight: 600;
 }
 
-.design-anc {
-  color: #fff;
-}
-
+.design-anc { color: #fff; }
  /*=================================
   footer styling ends here
 =================================*/ 
@@ -741,9 +721,7 @@ li {
 /*media query starts*/
 /*media query hover effect for desktop starts here*/
 @media only screen and (min-width: 995px) {
-  .nav-item:hover {
-    color: #fd5646;
-  }
+  .nav-item:hover { color: #fd5646; }
 
   .reservation-btn:hover {
     border: 2px solid #fff;
@@ -777,10 +755,13 @@ li {
 /*media query hover effect for desktop ends here*/
 /* media query for 1024px starts here  */
 @media only screen and (max-width: 1024px) {
-  .reservation .wrapper {
-    flex-direction: column;
-  }
 
+  .wrapper { padding: 90px 0; }
+  .reservation .wrapper { flex-direction: column; }
+  .form-input { flex-basis: 45%; }
+  .form-input input { width: 100%; }
+  .menu .main-heading { width: 100%; }
+  .table-reservation { margin-left: 0; }
   .tab-item { flex-basis: 46.3%;}
 }
 /* media query for 1024px ends here  */
@@ -798,9 +779,7 @@ li {
     right: 10px;
   }
 
-  .hamburger:hover+.nav {
-    right: 0;
-  }
+  .hamburger:hover+.nav { right: 0; }
 
   .nav {
     width: 100%;
@@ -828,13 +807,8 @@ li {
     gap: 40px;
   }
 
-  .tab-item {
-    flex-basis: 100%;
-  }
-
-  .table-reservation {
-    margin-left: 0;
-  }
+  .tab-item { flex-basis: 100%; }
+  .table-reservation { margin-left: 0; }
 
   .form-input input {
     width: 100%;
@@ -847,18 +821,9 @@ li {
   }
 
   .table-heading { margin-bottom: 15px; }
-
-  .middle-main-heading {
-    width: 80%;
-  }
-
-  .menu .main-heading {
-    width: 70%;
-  }
-
-  .chef .wrapper {
-    width: 100%;
-  }
+  .middle-main-heading { width: 80%; }
+  .menu .main-heading { width: 70%; }
+  .chef .wrapper { width: 100%; }
 
   .footer .wrapper {
     flex-direction: column;
@@ -874,15 +839,10 @@ li {
   }
 
   .left-banner { max-width: unset; }
-
   .banner-content { padding: 125px 15px; }
   .about-para { padding-right: 0 ; }
-
   .chef .wrapper { width: 96%; }
-
-  .chef-list {
-    flex-direction: column;
-  }
+  .chef-list { flex-direction: column; }
 
   .main-heading {
     padding-right: 10%;
@@ -907,7 +867,6 @@ li {
   }
 
   .form-input textarea { box-sizing: border-box; }
-
   .special .wrapper { width: 96%; }
   .tab-content .item-name { font-size: 15px; }
 }
@@ -916,8 +875,8 @@ li {
 /* media query for 320px starts here  */
 @media only screen and (max-width:480px) {
   .wrapper {
-    padding: 50px 0;
     width: 95%;
+    padding: 50px 0;
   }
 
   .banner-content { padding: 80px 15px; }
