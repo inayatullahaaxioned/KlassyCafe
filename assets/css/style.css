@@ -561,6 +561,11 @@ li {
   margin-bottom: 18px;
 }
 
+.form-row input {
+  width: 100%;
+  flex-basis: 45%;
+}
+
 .table-reservation form { 
   width: 88%;
   margin: 0 auto;
@@ -572,25 +577,25 @@ li {
   text-align: center;
 }
 
-.form-input input{
+.form-row input{
   padding: 16px 19px;
   border: 1px solid #e1e1e1;
   border-radius: 3px;
 }
 
-.form-input textarea {
+.form-row textarea {
   resize: none;
   width: 100%;
   padding: 20px 15px;
 }
 
-.form-input textarea {
+.form-row textarea {
   border: 1px solid #e1e1e1;
   outline: none;
 }
 
-.form-input input,
-.form-input textarea:focus {
+.form-row input,
+.form-row textarea:focus {
   outline: none;
 }
 
@@ -775,8 +780,8 @@ li {
 
   .wrapper { padding: 90px 0; }
   .reservation .wrapper { flex-direction: column; }
-  .form-input { flex-basis: 45%; }
-  .form-input input { width: 100%; }
+  .form-row { flex-basis: 45%; }
+  .form-row input { width: 100%; }
   .menu .main-heading { width: 100%; }
   .table-reservation { margin-left: 0; }
   .tab-item { flex-basis: 46.3%;}
@@ -833,7 +838,7 @@ li {
   .tab-item { flex-basis: 100%; }
   .table-reservation { margin-left: 0; }
 
-  .form-input input {
+  .form-row input {
     width: 100%;
     box-sizing: border-box;
   }
@@ -889,7 +894,7 @@ li {
     gap: 20px;
   }
 
-  .form-input textarea { box-sizing: border-box; }
+  .form-row textarea { box-sizing: border-box; }
   .special .wrapper { width: 96%; }
   .tab-content .item-name { font-size: 15px; }
 }
