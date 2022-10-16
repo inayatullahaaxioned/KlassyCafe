@@ -165,6 +165,7 @@ li {
   font-family: "FontAwesome";
   float: right;
 }
+
 /*=================================
   Header styling ends here
 =================================*/  
@@ -212,7 +213,8 @@ li {
 .banner-item:not(:first-child) { display: none; }
 .right-banner { position: relative; }
 
-.prev-banner {
+.prev-banner,
+.next-banner {
   display: inline-block;
   position: absolute;
   text-indent: -9999px;
@@ -222,6 +224,11 @@ li {
   border-radius: 50%;
   opacity: .6;
   cursor: pointer;
+}
+
+.next-banner {
+  left: auto;
+  right: 3%;
 }
 
 .banner-heading {
@@ -238,7 +245,8 @@ li {
   text-transform: uppercase;
 }
 
-.prev-banner::before {
+.prev-banner::before,
+.next-banner::before {
   content: "\f104";
   width: 50px;
   height: 50px;
@@ -251,6 +259,8 @@ li {
   text-indent: 0;
   font-size: 25px;
 }
+
+.next-banner::before { content: "\f105"; }
 /* banner section styling  end  */
 
 /* about section styling start here  */
@@ -287,7 +297,7 @@ li {
 }
 
 .about-para {
-  padding:0 46px 26px 0;
+  padding:0 0 26px 0;
   font-size: 15px;
   line-height: 22px;
 }
@@ -300,7 +310,10 @@ li {
 }
 
 .about-img-list img{ max-width: 160px; }
-.about-content { flex-basis: 54%; }
+.about-content {
+  padding: 0 6% 0 0;
+  flex-basis: 54%;
+}
 /* about section styling end here  */
 
 /* menu section styling start here  */
@@ -598,13 +611,14 @@ li {
 .tab-list figure { text-align: center; }
 .tab-logo { max-width: 90px; }
 
-.tab-list span {
+.tab-list figcaption {
+  color: #000;
   text-align: center;
   font-size: 14px;
   font-weight: 600;
 }
 
-.tab-list span.active { color: #FB5849; }
+.tab-list figcaption.active { color: #FB5849; }
 
 .tab-item-list {
   margin-top: 60px;
@@ -640,7 +654,10 @@ li {
   padding-right: 7%;
 }
 
-.tab-content .item-name { font-size: 20px; }
+.tab-content .item-name {
+  color: #000; 
+  font-size: 20px;
+}
 
 .tab-content p {
   font-size: 13.5px;
@@ -767,7 +784,7 @@ li {
 /* media query for 1024px ends here  */
 
 /* media query for 767px starts here  */
-@media only screen and (max-width:767px) {
+@media only screen and (max-width:995px) {
   .wrapper { padding: 80px 0; }
 
   .hamburger {
@@ -775,7 +792,7 @@ li {
     display: block;
     position: absolute;
     z-index: 5;
-    top: 8px;
+    top: 5%;
     right: 10px;
   }
 
@@ -806,7 +823,13 @@ li {
     flex-direction: column;
     gap: 40px;
   }
-
+  
+  .phone,
+  .emails {
+    margin: 15px;
+  }
+  
+  .banner-item img { object-fit: cover; }
   .tab-item { flex-basis: 100%; }
   .table-reservation { margin-left: 0; }
 
