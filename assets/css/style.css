@@ -788,7 +788,7 @@ li {
 }
 /* media query for 1024px ends here  */
 
-/* media query for 767px starts here  */
+/* media query for 995px starts here  */
 @media only screen and (max-width:995px) {
   .wrapper { padding: 80px 0; }
 
@@ -801,7 +801,10 @@ li {
     right: 10px;
   }
 
-  .hamburger:hover+.nav { right: 0; }
+  .hamburger.active .bar-two { opacity: 0; }
+  .hamburger.active .bar-one { transform: translateY(8px) rotate(45deg); }
+  .hamburger.active .bar-three { transform: translateY(-8px) rotate(-45deg); }
+  .nav.active { right: 0; }
 
   .nav {
     width: 100%;
