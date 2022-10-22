@@ -113,6 +113,8 @@ li {
   margin: 0;
   box-sizing: border-box;
 }
+
+.container { position: relative; }
 /*=================================
   Header styling starts here
 =================================*/
@@ -672,6 +674,34 @@ li {
 .tab-item img { width: auto; }
 /* weeekly special section styling end here  */
 
+.scroll-to {
+  position: fixed;
+  bottom: 3%;
+  right: 1%;
+}
+
+.scroll-top {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 1px 1px 8px #1c1c1c;
+  text-indent: -9999px;
+}
+
+.scroll-top::before {
+  content: "\f077";
+  float: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #1c1c1c;
+  font-size: 20px;
+  font-family: "FontAwesome";
+  text-indent: 0;
+  transform: translate(-50%, -50%);
+}
 /*=================================
   main styling ends here
 =================================*/
