@@ -10,6 +10,15 @@ const hamburger = document.querySelector(".hamburger"),
             });
 
 
+const scrollTop = document.querySelector(".scroll-to");
+    scrollTop.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
+    })
+
+
 
 
 
