@@ -18,24 +18,11 @@ const scrollTop = document.querySelector(".scroll-to");
         })
     })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+const header = document.querySelector(".header");
+    window.addEventListener('scroll' , function () {
+        if ( window.scrollY > header.offsetHeight + 350){
+            header.classList.add("active");
+        }else {
+            header.classList.remove("active");
+    }
+});
