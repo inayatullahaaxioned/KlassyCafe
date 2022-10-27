@@ -196,7 +196,7 @@ li {
   max-width: 405px;
   flex-basis: 92%;
   position: relative;
-  background: url(assets/images/top-left-bg.jpg) center no-repeat;
+  background: url(/assets/images/top-left-bg.jpg) center no-repeat;
   background-size: cover;
 }
 
